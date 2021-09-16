@@ -1,0 +1,37 @@
+package model;
+
+/*
+ * Template for individual apple product in the refurbished store.
+ */
+public class Product {
+	// attributes: should be private so that they are only visible within the current class
+	// If you intend to make an attribute public, it will be visible to all classes.
+	// Instead, create a public accessor for this private attribute.
+	
+	private String model; // e.g., iPad Pro 12.9
+	private String finish; // e.g., Silver, Space Grey
+	private int storage; // in the unit of GB, e.g., 256, 512, 1000 (1TB)
+	private boolean hasCellularConnectivity; // e.g., false (only wifi), true (wifi + cellular)
+	private double originalPrice; // e.g., 1789.00
+	private double discountValue; // e.g., 200.00
+	
+	// constructors
+	// if no constructors are declared here, an implicit, default constructor is available.
+	// Advice: if you really find the default constructor useful, define one explicitly,
+	// otherwise as soon as any additional constructors are added, the implicit one becomes unavailable.
+	public Product() {
+		// do nothing: all attributes will be stored their default values after an object is created.
+		
+	}
+	
+	// An overloaded version of the constructor
+	public Product(String model, double originalPrice) {
+		this.model = model;
+		this.originalPrice = originalPrice;
+	}
+	
+	// accessors
+	
+	
+	// mutators
+}

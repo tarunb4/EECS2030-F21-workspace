@@ -1,0 +1,21 @@
+package junit_tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import model.Product;
+
+public class TestProduct {
+	
+	@Test
+	public void test_product_1() {
+		Product p = new Product();
+		
+		// Think of each assertion is to verify the actual value of the method call against its EXPECTED value.
+		assertNull(p.getModel());
+		
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;model.Product.isHasCellularConnectivity()&apos; to &apos;hasCellularConnectivity&apos;&#x0D;&#x0A;- Original project: &apos;AppleShop&apos;&#x0D;&#x0A;- Original element: &apos;model.Product.isHasCellularConnectivity()&apos;&#x0D;&#x0A;- Renamed element: &apos;model.Product.hasCellularConnectivity()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;isHasCellularConnectivity&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;model{Product.java[Product~isHasCellularConnectivity" name="hasCellularConnectivity" references="true" stamp="1631504250050" version="1.0"/>
+</session>
