@@ -1,15 +1,16 @@
 package model;
 
 public class Log {
-	String versionNumber;
-	int nof;
-	String [] fixes;
-	String s;
+	private String versionNumber;
+	private int nof;
+	private String [] fixes;
+	private String s;
+	private final int MAX_CAPACITY = 10;
 	
 	public Log(String versionNumber) {
 		this.versionNumber = versionNumber;
-		this.nof = nof;
-		this.fixes = fixes;
+		this.nof = 0;
+		this.fixes = new String[MAX_CAPACITY];
 	}
 	
 	public String getVersion() {
@@ -29,12 +30,12 @@ public class Log {
 		
 		else{
 			
-			for(int i = 0; i < this.nof; i ++) {
+			for(int i = 0; i < this.nof; i++) {
 				s += this.fixes[i];
 				s += ", ";
-				this.nof ++;
 			}
 			
+			s = s.substring(0, s.length() - 2);
 			s += "]";
 		}
 		
@@ -43,12 +44,12 @@ public class Log {
 	}
 	
 	public String toString() {
-		return "Version " + this.versionNumber + " contains " + this.nof + " fixes " + s;
+		return "Version " + this.versionNumber + " contains " + this.nof + " fixes " + getFixes();
 	}
 	
 	public void addFix(String fix) {
 		this.fixes[this.nof] = fix;
-		this.nof ++;
+		this.nof++;
 	}
 	
 	
