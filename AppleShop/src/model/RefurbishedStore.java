@@ -27,6 +27,10 @@ public class RefurbishedStore {
 		return this.entries;
 	}
 	
+	public int getMaxCapacity() {
+		return this.MAX_CAPACITY;
+	}
+	
 	/*
 	 * Retrieve the array of entries, arranged in the chronological order
 	 * in which they were inserted.
