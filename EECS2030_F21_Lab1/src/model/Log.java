@@ -44,7 +44,8 @@ public class Log {
 	}
 	
 	public String toString() {
-		return "Version " + this.versionNumber + " contains " + this.nof + " fixes " + getFixes();
+		return String.format("Version %s contains %d fixes %s", this.versionNumber,this.nof, getFixes());
+//		return "Version " + this.versionNumber + " contains " + this.nof + " fixes " + getFixes();
 	}
 	
 	public void addFix(String fix) {
